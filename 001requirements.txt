@@ -47,3 +47,6 @@ nbconvert
 
 # Detailed Data Reports
 pandas-profiling
+
+# Environment variables:
+python-dotenv

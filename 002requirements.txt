@@ -1,6 +1,6 @@
-##################################
-# ADVANCE DATA SCIENCE LIBRARIES #
-##################################
+#######################################
+# INTERMEDIATE DATA SCIENCE LIBRARIES #
+#######################################
 
 # Numerical Computing
 numpy
@@ -85,3 +85,6 @@ nltk
 spacy
 # Pre-trained Models for Natural Language Processing
 transformers
+
+# Environment variables:
+python-dotenv
