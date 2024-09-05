@@ -1,57 +1,87 @@
-#######################################
-# INTERMEDIATE DATA SCIENCE LIBRARIES #
-#######################################
+##################################
+# ADVANCE DATA SCIENCE LIBRARIES #
+##################################
 
 # Numerical Computing
-NumPy # Numerical Computing
-
+numpy
+# Scientific Computing
+scipy
 # Data Manipulation and Analysis
-Pandas # Data Manipulation and Analysis
+pandas
 
-# Database Interaction
-SQLAlchemy # SQL Toolkit and Object-Relational Mapping
+# Database Interaction:
 
-# Statistical Analysis
-Statsmodels # Statistical Modeling
-Scikit-Learn # Machine Learning
+# SQL Toolkit and Object-Relational Mapping
+SQLAlchemy
 
-# Data Visualization
-Matplotlib # 2D Plotting and Data Visualization
-Seaborn # Statistical Data Visualization
-Plotly # Interactive Data Visualization
+# Statistical Analysis:
 
-# Exploratory Data Analysis
-pandas-profiling # Detailed Data Reports
+# Statistical Modeling
+statsmodels
+# Machine Learning
+scikit-learn
 
-# Web Scraping
-BeautifulSoup # HTML and XML Parsing for Web Scraping
-Requests # HTTP Requests and Web Scraping
-Selenium # Browser Automation
-Scrapy # Web Crawling and Scraping
+# Data Visualization:
 
-# Machine Learning Python Libraries 
-
-LightGBM # Gradient Boosting Framework for Machine Learning
-XGBoost # Scalable and Accurate Boosting for Machine Learning
-Prophet # Facebook data forecasting
-
-# Deep Learning
-
-TensorFlow # End-to-End Open-Source Platform for Deep Learning
-PyTorch # Deep Learning Framework with Dynamic Computation Graphs
-Keras # High-Level Deep Learning API
-
-# Natural Language Processing
-
-NLTK # Natural Language Processing Toolkit
-spaCy # Industrial-Strength Natural Language Processing
-Hugging Face Transformers # Pre-trained Models for Natural Language Processing
-
+# 2D Plotting and Data Visualization
+matplotlib
+# Statistical Data Visualization
+seaborn
+# Interactive Data Visualization
+plotly
 # Excel File Handling
-openpyxl # Excel File Handling
-xlrd # Excel File Reading
+openpyxl
+# Excel File Reading
+xlrd
 
-# Jupyter Ecosystem
-notebook # Jupyter Notebook Interface
-ipykernel # IPython Kernel for Jupyter
-nbconvert # Jupyter Notebook Conversion
+# Jupyter Ecosystem:
+
+# Jupyter Notebook Interface
+notebook
+# IPython Kernel for Jupyter
+ipykernel
+# Jupyter Notebook Conversion
+nbconvert
+
+# Exploratory Data Analysis:
+
+# Detailed Data Reports
+pandas-profiling
+
+# Web Scraping:
+
+# HTML and XML Parsing for Web Scraping
+beautifulsoup4
+# HTTP Requests and Web Scraping
+requests
+# Browser Automation
+selenium
+# Web Crawling and Scraping
+scrapy
+
+# Machine Learning Python Libraries:
+
+# Gradient Boosting Framework for Machine Learning
+lightgbm
+# Scalable and Accurate Boosting for Machine Learning
+xgboost
+# Facebook data forecasting
+prophet
+
+# Deep Learning:
+
+# End-to-End Open-Source Platform for Deep Learning
+tensorflow
+# Deep Learning Framework with Dynamic Computation Graphs
+torch
+# High-Level Deep Learning API
+keras
+
+# Natural Language Processing:
+
+# Natural Language Processing Toolkit
+nltk
+# Industrial-Strength Natural Language Processing
+spacy
+# Pre-trained Models for Natural Language Processing
+transformers
