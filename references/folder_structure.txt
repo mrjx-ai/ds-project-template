@@ -1,46 +1,46 @@
-/client-project        <- Project Folder. Naming convention is name of client,
-│			           stakeholders, company, etc.
+\client-describe-proj  <- Project Folder. Naming convention is name of client, stakeholders,
+│			  company, etc., a short `-` delimited description, and '-proj'
 │
+├── LICENSE            <- Open-source license if one is chosen.
+├── README.md          <- The top-level README for developers using this project.
+├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze > requirements.txt`.
 ├── data
-│   ├── /clean         <- Data that has been cleaned.
-│   ├── /processed     <- The final, canonical data sets.
-│   ├── /raw           <- The original, immutable data dump.
-│   └── /raw-ext       <- Data from third party sources.
+│   ├── \external      <- Data from third party sources.
+│   ├── \interim       <- Transformed data (not ready for modeling).
+│   ├── \processed     <- The final, canonical data sets for modeling.
+│   └── \raw           <- The original, immutable data dump.
 │
 ├── docs               <- Documentation of business task, deliverables, scope of work, etc.
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── models             <- Trained and serialized models, model predictions, or model summaries.
 │
 ├── notebooks          <- Jupyter notebooks. 
 │   └── 'name'.ipynb   <- Naming convention is the creator's initials,
 │                         a short `-` delimited description, and a version number e.g.
-│                         `1.0-jl-initial-data-exploration`.
+│                         `jl-data-exploration-v1.0`.
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
 ├── reports            <- Generated analysis as HTML, PDF, etc.
-│   ├── /dashboards    <- Dashboards created to be used in reporting.
-│   └── /figures       <- Generated graphics and figures to be used in reporting.
+│   ├── \dashboards    <- Dashboards created to be used in reporting.
+│   └── \figures       <- Generated graphics and figures to be used in reporting.
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── src                <- Source code for use in this project.
-│   ├── __init__.py    <- Makes src a Python module
-│   │
-│   ├── /data          <- Scripts to download or generate data
-│   │   └── make_dataset.py
-│   │
-│   ├── /features      <- Scripts to turn raw data into features for modeling
-│   │   └── build_features.py
-│   │
-│   ├── /models        <- Scripts to train models and then use trained models to make
-│   │   │                 predictions
-│   │   ├── predict_model.py
-│   │   └── train_model.py
-│   │
-│   └── /viz           <- Scripts to create exploratory and results oriented visualizations
-│       └── visualize.py
-│
-├── LICENSE
-├── README.md          <- The top-level README for developers using this project.
+└── src                <- Source code for use in this project.
+    ├── __init__.py        <- Makes src a Python module.
+    │
+    ├── dataset.py         <- Code to download or generate data.
+    │
+    ├── features.py        <- Code to create features for modeling.
+    │
+    ├── \modeling
+    │   ├── __init__.py       
+    │   ├── predict.py     <- Code to run model inference with trained models.
+    │   └── train.py       <- Code to train models.
+    │
+    ├── \utility           <- Scripts that serves as modules to import to make workflow more efficient.
+    │   ├── __init__.py
+    │	├── plots_cfg.py   <- Code to store plotting configuration.
+    │   └── config.py      <- Code to store useful variables and configuration.
+    │
+    └── plots.py           <- Code to create exploratory and results oriented visualizations.
