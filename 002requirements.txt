@@ -1,6 +1,6 @@
-#######################################
-# INTERMEDIATE DATA SCIENCE LIBRARIES #
-#######################################
+##################################
+# ADVANCE DATA SCIENCE LIBRARIES #
+##################################
 
 # Numerical Computing
 numpy
