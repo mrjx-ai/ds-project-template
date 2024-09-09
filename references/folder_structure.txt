@@ -1,6 +1,8 @@
 \client-describe-proj  <- Project Folder. Naming convention is name of client, stakeholders,
 │			  company, etc., a short `-` delimited description, and '-proj'
 │
+├── Dockerfile         <- Dockerfile to containerize the scraping project
+├── docker-compose.yml <- Docker Compose file for managing multi-container Docker applications
 ├── LICENSE            <- Open-source license if one is chosen.
 ├── README.md          <- The top-level README for developers using this project.
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
@@ -43,4 +45,10 @@
     │	├── plots_cfg.py   <- Code to store plotting configuration.
     │   └── config.py      <- Code to store useful variables and configuration.
     │
-    └── plots.py           <- Code to create exploratory and results oriented visualizations.
+    ├── \scraping
+    │   ├── __init__.py  
+    │   ├── scraper_static.py    <- Scraping static sites (BeautifulSoup)
+    │   ├── scraper_dynamic.py   <- Scraping dynamic sites (Selenium)
+    │   └── scraper_general.py   <- General scraping (Scrapy)
+    │
+    └── plots.py           <- Code to create exploratory and results oriented visualizations.         
