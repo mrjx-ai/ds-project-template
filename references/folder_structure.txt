@@ -1,54 +1,53 @@
-\client-describe-proj  <- Project Folder. Naming convention is name of client, stakeholders,
-│			  company, etc., a short `-` delimited description, and '-proj'
+\client-describe-proj      <- Project Folder.
 │
-├── Dockerfile         <- Dockerfile to containerize the scraping project
-├── docker-compose.yml <- Docker Compose file for managing multi-container Docker applications
-├── LICENSE            <- Open-source license if one is chosen.
-├── README.md          <- The top-level README for developers using this project.
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`.
+├── .env.example           <- Example dotenv file for stroring sensitive information.
+├── Dockerfile             <- Dockerfile to containerize the scraping project.
+├── docker-compose.yml     <- Docker Compose file for managing multi-container Docker applications.
+├── LICENSE                <- Open-source license if one is chosen.
+├── README.md              <- The top-level README for developers using this project.
+├── requirements.txt       <- The requirements file for reproducing the analysis environment, e.g.
+│                             generated with `pip freeze > requirements.txt`.
 ├── data
-│   ├── \external      <- Data from third party sources.
-│   ├── \interim       <- Transformed data (not ready for modeling).
-│   ├── \processed     <- The final, canonical data sets for modeling.
-│   └── \raw           <- The original, immutable data dump.
+│   ├── \external            <- Data from third party sources.
+│   ├── \interim             <- Transformed data (not ready for modeling).
+│   ├── \processed           <- The final, canonical data sets for modeling.
+│   └── \raw                 <- The original, immutable data dump.
 │
-├── docs               <- Documentation of business task, deliverables, scope of work, etc.
+├── docs                   <- Documentation of business task, deliverables, scope of work, etc.
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries.
+├── models                 <- Trained and serialized models, model predictions, or model summaries.
 │
-├── notebooks          <- Jupyter notebooks. 
-│   └── 'name'.ipynb   <- Naming convention is the creator's initials,
-│                         a short `-` delimited description, and a version number e.g.
-│                         `jl-data-exploration-v1.0`.
+├── notebooks              <- Jupyter notebooks. 
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+├── references             <- Data dictionaries, manuals, and all other explanatory materials.
 │
-├── reports            <- Generated analysis as HTML, PDF, etc.
-│   ├── \dashboards    <- Dashboards created to be used in reporting.
-│   └── \figures       <- Generated graphics and figures to be used in reporting.
+├── reports                <- Generated analysis as HTML, PDF, etc.
+│   ├── \dashboards          <- Dashboards created to be used in reporting.
+│   └── \figures             <- Generated graphics and figures to be used in reporting.
 │
-└── src                <- Source code for use in this project.
-    ├── __init__.py        <- Makes src a Python module.
+└── scrc                   <- Source code for use in this project.
+    ├── __init__.py          <- Makes src a Python module.
     │
-    ├── dataset.py         <- Code to download or generate data.
+    ├── dataset.py           <- Code to download or generate data.
     │
-    ├── features.py        <- Code to create features for modeling.
+    ├── features.py          <- Code to create features for modeling.
     │
-    ├── \modeling
+    ├── plots.py             <- Code to create exploratory and results oriented visualizations.
+    │
+    ├── \modeling              <- Scripts for data modeling.
     │   ├── __init__.py       
-    │   ├── predict.py     <- Code to run model inference with trained models.
-    │   └── train.py       <- Code to train models.
+    │   ├── predict.py           <- Code to run model inference with trained models.
+    │   ├── test.py              <- Code to test models.
+    │   └── train.py             <- Code to train models and export.
     │
-    ├── \utility           <- Scripts that serves as modules to import to make workflow more efficient.
+    ├── \scraping              <- Scripts for data extraction.
+    │   └── scraper.py           <- Code for data extraction from the web.
+    │
+    ├── \utility               <- Scripts that serves as modules to import to make workflow more efficient.
     │   ├── __init__.py
-    │	├── plots_cfg.py   <- Code to store plotting configuration.
-    │   └── config.py      <- Code to store useful variables and configuration.
-    │
-    ├── \scraping
-    │   ├── __init__.py  
-    │   ├── scraper_static.py    <- Scraping static sites (BeautifulSoup)
-    │   ├── scraper_dynamic.py   <- Scraping dynamic sites (Selenium)
-    │   └── scraper_general.py   <- General scraping (Scrapy)
-    │
-    └── plots.py           <- Code to create exploratory and results oriented visualizations.         
+    │   ├── config.py            <- Code to store useful variables and configuration.
+    │   ├── decrypter.py         <- Code for quick file decription.
+    │   ├── encrypter.py         <- Code for quick file encription.
+    │   ├── encryption.py        <- Code for that contains the Encrypt class.
+    │	├── plots_cfg.py         <- Code to store plots configuration.
+    │   ├── plots_save.py        <- Code for saving plots.
